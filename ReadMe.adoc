@@ -1,58 +1,69 @@
-:Author: iuadanur
-:Email:
-:Date: 08/05/2025
-:Revision: version#
-:License: Public Domain
+# IoT-Based Natural Gas Leak Detection System Using ESP32
 
-= Project: {Project}
+This project implements a smart natural gas (methane) leak detection and alert system using the **ESP32** development board. The system monitors gas levels and environmental conditions, triggers alerts when danger is detected, and sends real-time data to the cloud.
 
-Describe your project
+## 📌 Project Overview
 
-== Step 1: Installation
-Please describe the steps to install this project.
+Gas leaks can be life-threatening if not detected early. Manual detection methods are often unreliable and delayed. This IoT-based solution aims to:
 
-For example:
+- Automatically detect gas leaks
+- Provide sound and visual alerts
+- Display data on a local OLED screen
+- Send real-time sensor data to the Arduino IoT Cloud for remote monitoring
 
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+## 🛠️ Hardware Components
 
-== Step 2: Assemble the circuit
+- **ESP32 DevKit v1** (microcontroller)
+- **MQ4 Gas Sensor** (for methane detection)
+- **DHT11 Sensor** (temperature and humidity)
+- **RGB LED** (visual alerts)
+- **Buzzer** (sound alerts)
+- **OLED Display** (SH1106, for local output)
 
-Assemble the circuit following the diagram layout.png attached to the sketch
+## 🌐 Communication & Cloud
 
-== Step 3: Load the code
+- **Wi-Fi** connectivity
+- **MQTT Protocol** for data transmission
+- **Arduino IoT Cloud** for online data visualization and alert management
 
-Upload the code contained in this sketch on to your board
+## ⚙️ System Functionality
 
-=== Folder structure
+- Gas level is constantly monitored using the MQ4 sensor
+- If gas concentration exceeds a defined threshold:
+  - RGB LED turns **red**
+  - Buzzer is activated
+- If below threshold:
+  - RGB LED stays **green**
+  - Buzzer remains off
+- OLED screen shows:
+  - Gas level
+  - Temperature
+  - Humidity
+- All data is also pushed to the Arduino IoT Cloud dashboard
 
-....
- sketch123                => Arduino sketch folder
-  ├── sketch123.ino       => main Arduino file
-  ├── schematics.png      => (optional) an image of the required schematics
-  ├── layout.png          => (optional) an image of the layout
-  └── ReadMe.adoc         => this file
-....
+## 🔒 Security Features
 
-=== License
-This project is released under a {License} License.
+- Wi-Fi network authentication
+- Arduino IoT Cloud user account authentication
 
-=== Contributing
-To contribute to this project please contact: 
+## 📊 Results
 
-=== BOM
-Add the bill of the materials you need for this project.
+- Gas detection and alert system performs reliably
+- Real-time data is visualized on both local and cloud interfaces
+- Environmental data (temperature & humidity) enhances monitoring context
 
-|===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10       
-| L1 | Red LED        | 2345-asdf   | 5        
-| A1 | Arduino Zero   | ABX00066    | 1        
-|===
+## 🚀 Future Work
 
+- Add battery power for portable operation
+- Enclose the device for safety and mobility
+- Explore integration with smart home systems (e.g., Alexa, Google Home)
 
-=== Help
-This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
-If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
-or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
+## 📚 Libraries Used
+
+- `ArduinoIoTCloud`
+- `MQUnifiedsensor`
+- `DHT`
+- `Adafruit_GFX`
+- `Adafruit_SH110X`
+
+> Developed as a term project for CSE328 - Internet of Things, Akdeniz University, Computer Engineering Department.
