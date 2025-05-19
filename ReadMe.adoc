@@ -57,22 +57,22 @@ Gas leaks can be life-threatening if not detected early. Manual detection method
 .Circuit Setup
 image::images/WhatsApp Image 2025-05-17 at 19.55.27.jpeg[width=600]
 
-.IoT Cloud Dashboard
+.Arduino Serial Monitor Outputs
 image::images/Ekran Resmi 2025-05-16 00.14.07.png[width=600]
 
-.Device Display
+.Push Notification
 image::images/IMG_7494.png[width=600]
 
-.Sensor Reading 1
+.Arduino IoT Trigger Settings
 image::images/Ekran Resmi 2025-05-15 23.51.18.png[width=600]
 
-.Sensor Reading 2
+.Arduino IoT Variables
 image::images/Ekran Resmi 2025-05-15 23.52.55.png[width=600]
 
-.Alert State
+.Dashboard When Gas Not Detected
 image::images/Ekran Resmi 2025-05-19 00.16.22.png[width=600]
 
-.Normal State
+.Dashboard When Gas Detected
 image::images/Ekran Resmi 2025-05-19 00.17.29.png[width=600]
 
 ## 🚀 Future Work
