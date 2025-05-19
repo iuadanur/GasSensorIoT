@@ -11,6 +11,29 @@ Gas leaks can be life-threatening if not detected early. Manual detection method
 - Display data on a local OLED screen
 - Send real-time sensor data to the Arduino IoT Cloud for remote monitoring
 
+## 📷 Project Photos
+
+.Circuit Setup
+image::images/WhatsApp Image 2025-05-17 at 19.55.27.jpeg[width=600]
+
+.Arduino Serial Monitor Outputs
+image::images/Ekran Resmi 2025-05-16 00.14.07.png[width=600]
+
+.Push Notification
+image::images/IMG_7494.png[width=600]
+
+.Arduino IoT Trigger Settings
+image::images/Ekran Resmi 2025-05-15 23.51.18.png[width=600]
+
+.Arduino IoT Variables
+image::images/Ekran Resmi 2025-05-15 23.52.55.png[width=600]
+
+.Dashboard When Gas Not Detected
+image::images/Ekran Resmi 2025-05-19 00.16.22.png[width=600]
+
+.Dashboard When Gas Detected
+image::images/Ekran Resmi 2025-05-19 00.17.29.png[width=600]
+
 ## 🛠️ Hardware Components
 
 - **ESP32 DevKit v1** (microcontroller)
@@ -51,29 +74,6 @@ Gas leaks can be life-threatening if not detected early. Manual detection method
 - Gas detection and alert system performs reliably
 - Real-time data is visualized on both local and cloud interfaces
 - Environmental data (temperature & humidity) enhances monitoring context
-
-## 📷 Project Photos
-
-.Circuit Setup
-image::images/WhatsApp Image 2025-05-17 at 19.55.27.jpeg[width=600]
-
-.Arduino Serial Monitor Outputs
-image::images/Ekran Resmi 2025-05-16 00.14.07.png[width=600]
-
-.Push Notification
-image::images/IMG_7494.png[width=600]
-
-.Arduino IoT Trigger Settings
-image::images/Ekran Resmi 2025-05-15 23.51.18.png[width=600]
-
-.Arduino IoT Variables
-image::images/Ekran Resmi 2025-05-15 23.52.55.png[width=600]
-
-.Dashboard When Gas Not Detected
-image::images/Ekran Resmi 2025-05-19 00.16.22.png[width=600]
-
-.Dashboard When Gas Detected
-image::images/Ekran Resmi 2025-05-19 00.17.29.png[width=600]
 
 ## 🚀 Future Work
 
